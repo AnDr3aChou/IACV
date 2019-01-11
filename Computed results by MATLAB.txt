@@ -1,0 +1,83 @@
+2.1
+
+% ratio between diameter and distance
+
+Ratio =
+
+    0.1763
+
+2.2
+
+% Vanishing points
+
+[vx, vy, vz]
+
+ans =
+
+   1.0e+03 *
+
+   -2.6619    5.6786    2.2735
+   -0.6218   -0.4042   -9.2856
+    0.0010    0.0010    0.0010
+
+% Matrix K
+
+K =
+
+   1.0e+03 *
+
+    3.8868         0    1.9175
+         0    2.9151   -1.6094
+         0         0    0.0010
+
+2.3
+
+% Find a point in image to be the origin of the world coordinate
+
+[xo; yo; 1]
+
+ans =
+
+   1.0e+03 *
+
+    0.8841
+    1.8287
+    0.0010
+
+% The projection matrix
+
+P =
+
+   1.0e+03 *
+
+   -2.6619    5.6786    2.2735    0.8841
+   -0.6218   -0.4042   -9.2856    1.8287
+    0.0010    0.0010    0.0010    0.0010
+
+% The right and left border of the license plate in world coordinate
+
+X_1_w =
+
+   -0.0442
+         0
+         0
+    1.0000
+
+
+X_2_w =
+
+    0.0442
+         0
+         0
+    1.0000
+
+
+2.4
+
+% Camera pose
+
+O =
+
+   -0.6843
+   -0.5838
+    0.2682
